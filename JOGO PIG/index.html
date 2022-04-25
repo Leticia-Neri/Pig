@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo - PIG</title>
+    <link rel="stylesheet" href="style.css">
+    <!--add-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="pig.js"></script>
+
+</head>
+
+<body>
+
+    <h1 id="titulo">Jogo dos dados - PIG</h1>
+    <div id="fundo">
+        <div class="row">
+            <section class="col-4">
+                <span class="quebraDeLinha fw-bold mx-4">jogador 1</span>
+                <div class="PFeR1" id="F1">Pontos Fixos
+                    <div class="teste"><span id="pontosFixos1">0</span></div>
+                </div>
+                <div class="PFeR1">Pontos Rodada
+                    <div class="teste"><span id="pontosRodadas1">0</span></div>
+                </div>
+            </section>
+            <section class="col-4">
+                <div id="dado"> <span id="numDoDadoTela">0</span></div>
+                <button onclick="Pig.rodaDado()">Roda Dado </button>
+                <button onclick="Pig.parar()">Para </button>
+            </section>
+            <section class="col-4">
+                <span class="quebraDeLinha fw-bold mx-4">jogador 2</span>
+                <div class="PFeR2" ID="F2">Pontos Fixos
+                    <div class="teste"> <span id="pontosFixos2">0</span></div>
+                </div>
+                <div class="PFeR2">Pontos Rodada
+                    <div class="teste"> <span id="pontosRodadas2">0</span></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>
